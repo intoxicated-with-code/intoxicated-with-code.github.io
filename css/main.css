@@ -96,132 +96,120 @@ textarea {
 /* ==========================================================================
    Author's custom styles
 ========================================================================== */
-body {
+html {
     font-size: 16px;
+    margin-top: 0;
 }
 
-img {
-    width: 100%;
-    height: auto;
+body {
+    margin: 0 auto;
+    font-family: EB Garamond, Oswald, Arial, sans-serif;
+    font-size: 1em;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    font-family: EB Garamond;
+}
 
 header {
     width: 100%;
     background: url('../img/sea.jpg');
-    background-size: 100% 100%;
+    background-size: 100%;
     background-repeat: no-repeat;
     padding-top: 0;
-    margin-top: -56px; 
-    font-family: EB Garamond;
+    margin-bottom: 40px;
+    margin-top: -17px; 
 }
 
 header h1 {
-    padding-top: 130px;
-    font-size: 65px;
+    padding-top: 25px;
+    font-size: 2em;
     color: #dee9ee;
     text-align: center;
     text-transform: uppercase;
-    line-height: 70%;
+    line-height: 90%;
     letter-spacing: 2px;
-
 }
 
 header h2 {
     padding-top: 0;
+    padding-bottom: 30px;
     margin-top: 0;
-    font-size: 45px;
+    font-size: 1em;
     color: #dee9ee;
     text-align: center;
     letter-spacing: 2px;
     font-variant: small-caps;
-    line-height: 70%;
-} 
-
-
-ul {
-  text-align: justify;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    line-height: 90%;
 }
 
-ul:after {
-  content: "";
-  margin-left: 100%;
-} 
-
-#menu li {
-  display: inline;
+nav {
+    text-align: center;
+    padding-bottom: 20px;
 }
 
-nav ul li a {
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    line-height: 35px;
+    text-decoration: underline;
+    font-size: 0.875em;
+    padding: 0 10px;
+    color: #022a2c;
     font-family: Oswald;
     font-weight: bold;
     font-variant: small-caps;
-    text-decoration: underline;
-    font-size: 39px;
-    color: #022a2c;
-    letter-spacing: 2px;
-    text-align: center;
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 590px; 
-    margin-left: 100px;
-    margin-right: 100px
 }
 
 /***** ABOUT *****/
 #about {
-    /*display: inline-flex;*/
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 50px;
-    margin-top: 50px;
+    width: 100%;
     margin-bottom: 50px;
 }
 
+#about h2 {
+    font-family: EB Garamond;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #484747;
+    letter-spacing: 7px;
+    text-align: center;
+    }
+
 .about-img img {
-    max-width: 274px;
-    min-width: 100px;
-    margin: 100px 0 0 230px;
+    width: 40%;
+    float: left;
+    margin-right: 35px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
-.about-section {
-    width: 50%;
-    text-align: justify;
-    margin-left: 230px;
-    margin-right: 170px;
+.about-section p{
+    font-family: Oswald;
+    font-size: 1em;
+    color: #484747;
+    letter-spacing: 4px;
+    font-weight: 300;
+    margin: auto 5%;
 }
 
-    .about-section h2 {
-        font-family: EB Garamond;
-        font-size: 48px;
-        text-transform: uppercase;
-        color: #484747;
-        letter-spacing: 7px;
-    }
-
-    .about-section p {
-        font-family: Oswald;
-        font-size: 1em;
-        color: #484747;
-        letter-spacing: 4px;
-        font-weight: 300;
-    }
-
-    .about-section a {
-        font-family: Oswald;
-        font-size: 1em;
-        color: #484747;
-        letter-spacing: 4px;
-    }
+.about-section a{
+    font-family: Oswald;
+    font-size: 1em;
+    color: #484747;
+    letter-spacing: 4px;
+}
 
 /***** SKILLS *****/
 #skills {
     background-color: #dee9ee;
+    width: 100%;
 }
 
 .skills-container {
@@ -230,30 +218,29 @@ nav ul li a {
     margin-right: auto;
     margin: auto;
     max-width: 1940px;
-    margin-left: 7.5%;
+    margin-left: 3%;
     }
 
     #skills h2 {
         font-family: EB Garamond;
-        font-size: 48px;
+        font-size: 2em;
         text-transform: uppercase;
         color: #484747;
         letter-spacing: 7px;
-        padding-top: 50px;
+        padding-top: 30px;
         text-align: center;
     }
 
     #skills h4 {
         font-family: Oswald;
-        font-size: 1.5em;
+        font-size: 1em;
         transform: uppercase;
         color: #484747;
         text-align: center;
     }
 
 .column img {
-    width: 150px;
-    height: 150px;
+    width: 70%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -276,17 +263,15 @@ nav ul li a {
   display: table;
 }
 
-
-
 /***** WORK *****/
 #work {
-    background-color: none;
-    height: 600px;
+    width: 100%;
+    padding-bottom: 90px;
 }
 
 #work h2 {
     font-family: EB Garamond;
-    font-size: 48px;
+    font-size: 2em;
     text-transform: uppercase;
     color: #484747;
     letter-spacing: 7px;
@@ -297,18 +282,10 @@ nav ul li a {
 #work img {
     width:350px;
     height:300px;
-    display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px;
+    display: block;
     margin-top: 40px;
-}
-
-.work-img {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .more-link{
@@ -317,26 +294,27 @@ nav ul li a {
     text-transform: uppercase;
     color: #484747;
     letter-spacing: 7px;
-    padding-top: 50px;
-    float: right;
-    margin-right: 5%;
     text-decoration: none;
+    float: right;
+    margin-top: 6%;
+    margin-right: 7%;
 }
 
 /***** CONTACT *****/
 
 #contact{
-background-color: #016e64;
-height: 600px;
+    background-color: #016e64;
+    width: 100%;
+    padding-bottom: 5%;
 }
 
 #contact h2 {
     font-family: EB Garamond;
-    font-size: 48px;
+    font-size: 2em;
     text-transform: uppercase;
     color: #dee9ee;
     letter-spacing: 7px;
-    padding-top: 50px;
+    padding-top: 30px;
     text-align: center;
 }
 
@@ -391,6 +369,662 @@ input[type=submit]:hover {
     margin-top: 32px;
 } */
 
+.email-icon img{
+    width: 20%;
+    margin-top: 42px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+h4.email-address {
+    font-family: Oswald;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    font-weight: 400;
+    color: #dee9ee;
+    text-align: center;
+    margin-top: 10%;
+}
+
+h4.email-address a{
+    color: #dee9ee;
+}
+
+
+.social-text {
+    text-align: center;
+}
+
+.social-icon img{
+    width: 20%;
+    margin-top: 42px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+h4.social-media {
+    font-family: Oswald;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    font-weight: 400;
+    color: #dee9ee;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.socialmedia-section ul li {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 30%;
+    margin-left: auto;
+} 
+
+/***** FOOTER *****/
+.footer-header {
+    padding-top: 20px;
+    text-align: center;
+}
+
+footer h2.footer-header {
+    font-family: EB Garamond;
+    font-weight: 300;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #484747;
+    letter-spacing: 7px;   
+    clear: both;
+}
+
+/***** CASE STUDIES *****/
+.case-studies {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #dee9ee;
+}
+
+/* Style the header links */
+.header a {
+  float: right;
+  display: block;
+  padding: 14px 16px;
+  font-size: 1em; 
+  font-weight: 400;
+  color: #072d36;
+  letter-spacing: 7px;
+  font-family: Oswald;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-family: EB Garamond;
+  font-weight: 700;  
+  font-size: 1em;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #072d36;
+  float: left;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #072d36;
+  color: white;
+}
+
+.header a:not(:first-child) {display: none;}
+  .header a.icon {
+    float: right;
+    display: block;
+  }
+
+  .header.responsive {position: relative;}
+  .header.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .header.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+.column-casestudies img {
+    width:80%;
+    display: block;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #072d36;
+}
+
+.case-studies h2 {
+        font-family: EB Garamond;
+        font-size: 1.6em;
+        text-transform: uppercase;
+        color: #484747;
+        letter-spacing: 5px;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 5%;
+    }
+
+    .case-studies a {
+        text-decoration: none;
+    }
+
+    .case-studies h4 {
+        font-family: Oswald;
+        font-size: 0.87em;
+        letter-spacing: 3px;
+        font-weight: 400;
+        color: #484747;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+/***** SINGLE CASE STUDY ******/
+.case-studies h2 {
+    margin-top: 6%;
+}
+
+p.single-case-study {
+    font-family: Oswald;
+    font-size: 1.13em;
+    color: #6a6a6a;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-align: justify;
+    margin: 13% 3% 5% 3%;
+}
+
+ul.project-add-ons {
+    font-family: Oswald;
+    font-size: 1.13em;
+    color: #6a6a6a;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-align: justify;
+    list-style: circle;
+    margin-left: auto;
+    margin-right: 3%;
+}
+
+p.website-link {
+    font-family: EB Garamond;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #484747;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 10%;
+    margin-left: 3%;
+}
+
+.website-link a{
+    color: #484747;
+}
+
+img.single-casestudy-img {
+    border: 1px solid #6a6a6a;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: auto;
+    width: 100%;
+    height: auto;
+}
+
+p.back-link {
+    font-family: EB Garamond;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #484747;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    margin-top: auto;
+    margin-left: 3%;
+    margin-bottom: 30px;
+    clear: both;
+}
+
+.back-link a{
+    color: #484747;
+}
+
+/* footer case studies */
+.footer-case-studies {
+    padding-top: 20px;
+    text-align: center;
+    border-top: 1px solid #6a6a6a;
+    margin: auto 10px 10px;
+}
+
+h2.footer-case-studies {
+    font-family: EB Garamond;
+    font-weight: 300;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #484747;
+    letter-spacing: 7px;   
+    clear: both;
+    margin-top: 0;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */ 
+
+/*****************************************/
+/*-------- TABLETS --------*/
+/*****************************************/
+@media only screen and (min-width:768px) {
+header {
+    width: 100%;
+    background: url('../img/sea.jpg');
+    background-size: 117%;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    margin-bottom: 40px;
+    margin-top: -32px;
+}
+
+header h1 {
+    padding-top: 60px;
+    font-size: 3em;
+    color: #dee9ee;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 90%;
+    letter-spacing: 2px;
+}
+
+header h2 {
+    padding-top: 0;
+    padding-bottom: 30px;
+    margin-top: 0;
+    font-size: 2em;
+    color: #dee9ee;
+    text-align: center;
+    letter-spacing: 2px;
+    font-variant: small-caps;
+    line-height: 90%;
+}
+
+ul {
+  text-align: justify;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul:after {
+  content: "";
+  margin-left: 100%;
+} 
+
+#menu li {
+  display: inline;
+}
+
+nav ul li a {
+    font-family: Oswald;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-decoration: underline;
+    font-size: 2em;
+    color: #022a2c;
+    letter-spacing: 2px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 390px; 
+}
+
+/*------- SKILLS -------*/
+#skills h4 {
+    font-family: Oswald;
+    font-size: 1.5em;
+    transform: uppercase;
+    color: #484747;
+    text-align: center;
+    }
+
+
+/*------- CASE STUDIES PAGE -------*/
+.case-studies {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.case-studies h2 {
+        margin-top: 3%;
+    }
+/*------- WORK -------*/
+
+.more-link{
+    margin-right: 8%;
+}
+
+/***** SINGLE CASE STUDY PAGE******/
+.single-example {
+    margin: 80px 100px 0 100px;
+}
+
+h2.single-case-study {
+    font-family: EB Garamond;
+    font-weight: 700;
+    font-size: 36px;
+    margin-top: 5%;
+}
+
+h4.single-case-study {
+    font-size: 16px;
+}
+
+p.single-case-study {
+    font-family: Oswald;
+    font-size: 18px;
+    color: #6a6a6a;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-align: justify;
+    margin-bottom: 5%;
+}
+
+ul.project-add-ons {
+    font-family: Oswald;
+    font-size: 18px;
+    color: #6a6a6a;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-align: justify;
+    list-style: circle;
+    margin-left: 6%;
+}
+
+p.website-link {
+    font-family: EB Garamond;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #484747;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    float: left;
+}
+
+.website-link a{
+    color: #484747;
+}
+
+img.single-casestudy-img {
+    border: 1px solid #6a6a6a;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: auto;
+    width: 100%;
+    height: auto;
+}
+
+p.back-link {
+    font-family: EB Garamond;
+    font-size: 1.563em;
+    text-transform: uppercase;
+    color: #484747;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    margin-top: auto;
+    margin-bottom: 5%;
+    clear: both;
+}
+
+/* footer case studies */
+.footer-case-studies {
+    padding-top: 20px;
+    text-align: center;
+    border-top: 1px solid #6a6a6a;
+    margin: auto 80px;
+}
+
+h2.footer-case-studies {
+    font-family: EB Garamond;
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #484747;
+    letter-spacing: 7px;   
+    clear: both;
+    margin-top: 0;
+}
+/*****************************************/
+/*------- DESKTOPS -------*/
+/*****************************************/
+@media (min-width: 940px){
+header {
+    width: 100%;
+    background: url('../img/sea.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    margin-top: -56px; 
+    font-family: EB Garamond;
+}
+
+header h1 {
+    font-size: 4em;
+    line-height: 70%;
+    padding-top: 130px;
+}
+
+header h2 {
+    font-size: 2.8em;
+    line-height: 70%;
+}
+
+ul {
+  text-align: justify;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul:after {
+  content: "";
+  margin-left: 100%;
+} 
+
+#menu li {
+  display: inline;
+}
+
+nav {
+    background: none;
+    margin-top: auto;
+    padding-bottom: auto;
+}
+
+nav ul li a {
+    font-family: Oswald;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-decoration: underline;
+    font-size: 39px;
+    color: #022a2c;
+    letter-spacing: 2px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 540px; 
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/***** ABOUT *****/
+#about {
+    margin-bottom: 100px;
+}
+
+#about h2{
+    font-family: EB Garamond;
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #484747;
+    letter-spacing: 7px;
+    text-align: center;
+    }
+
+.about-img-p {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.about-img img {
+    width: 40%;
+    max-width: 300px;
+    max-height: 300px;
+    float: left;
+    margin-right: 35px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.about-section p{
+    font-family: Oswald;
+    font-size: 1em;
+    color: #484747;
+    letter-spacing: 4px;
+    font-weight: 300;
+    margin: auto 5%;
+}
+
+.about-section a{
+    font-family: Oswald;
+    font-size: 1em;
+    color: #484747;
+    letter-spacing: 4px;
+}
+
+
+/***** SKILLS *****/
+#skills {
+    background-color: #dee9ee;
+}
+
+.skills-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+    max-width: 1940px;
+    margin-left: 7.5%;
+    }
+
+    #skills h2 {
+        font-family: EB Garamond;
+        font-size: 3em;
+        text-transform: uppercase;
+        color: #484747;
+        letter-spacing: 7px;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    #skills h4 {
+        font-family: Oswald;
+        font-size: 1.5em;
+        transform: uppercase;
+        color: #484747;
+        text-align: center;
+    }
+
+.column img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.column h4 {
+    text-align: center;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/***** WORK *****/
+#work h2 {
+    font-size: 3em;
+    letter-spacing: 7px;
+    padding-top: 40px;
+}
+
+#work img {
+    width: 80%;
+    height: auto;
+    display: inline-block;
+    margin-left: 10%;
+}
+
+.work-img {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.more-link{
+    font-family: EB Garamond;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #484747;
+    letter-spacing: 7px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    float: right;
+    margin-right: 5%;
+    text-decoration: none;
+}
+
+/***** CONTACT *****/
+
+#contact{
+background-color: #016e64;
+padding-bottom: 100px;
+margin-top: 100px;
+}
+
+#contact h2 {
+    font-family: EB Garamond;
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #dee9ee;
+    letter-spacing: 7px;
+    padding-top: 50px;
+    text-align: center;
+}
+
 .email-section {
     width: 50%;
     display: flex;
@@ -399,10 +1033,9 @@ input[type=submit]:hover {
 }
 
 .email-icon {
-    width: 80px;
-    height: 80px;
     position: absolute;
-    margin-top: 42px;
+    width: 500px;
+    height: auto;
 }
 
 h4.email-address {
@@ -413,19 +1046,13 @@ h4.email-address {
     color: #dee9ee;
     text-align: center;
     float: left;
-    margin-top: 140px;
+    margin-top: 180px;
 }
-
-h4.email-address a{
-    color: #dee9ee;
-}
-
 
 .socialmedia-section {
     width: 50%;
     display: inline-grid;
     justify-content: center;
-    float: left;
 }
 
 .social-text {
@@ -434,11 +1061,13 @@ h4.email-address a{
 }
 
 .social-icon {
-    width: 80px;
-    height: 80px;
     position: absolute;
-    margin-top: 42px;
-    margin-left: 134px;
+    width: 500px;
+    height: auto;
+}
+
+.social-icon img {
+    margin-left: 26%;
 }
 
 h4.social-media {
@@ -449,7 +1078,7 @@ h4.social-media {
     color: #dee9ee;
     text-align: center;
     float: left;
-    margin-top: 140px;
+    margin-top: 180px;
 }
 
 .socialmedia-button {
@@ -461,7 +1090,7 @@ h4.social-media {
 
 .socialmedia-section ul li {
     display: inline-block;
-    margin: 2px;
+    margin: 5px;
     width: 51px;
     height: 51px;
 
@@ -489,7 +1118,7 @@ body.case-studies {
     margin: 0;
 }
 
-.header {
+nav .header {
   overflow: hidden;
   background-color: #dee9ee;
   height: 82px;
@@ -521,7 +1150,7 @@ body.case-studies {
   text-transform: uppercase;
   text-decoration: none;
   color: #072d36;
-  margin-top: 15px;
+  margin-top: 12px;
   margin-left: 10px;
 }
 
@@ -536,15 +1165,15 @@ body.case-studies {
   float: right;
 }
 
+.icon {
+    margin-bottom: 10px;
+}
+
 /* Case studies */ 
 
 .case-studies {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin: auto;
-    max-width: 1940px;
-    margin-left: 7.5%;
+    margin-bottom: 3%;
     }
 
     .case-studies h2 {
@@ -572,8 +1201,8 @@ body.case-studies {
     }
 
 .column-casestudies img {
-    width: 350px;
-    height: 221px;
+    width: 80%;
+    height: 120%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -589,6 +1218,7 @@ body.case-studies {
   float: left;
   width: 30%;
   padding: 5px;
+  margin-left: 2%;
 }
 
 /* Clear floats after image containers */
@@ -599,15 +1229,15 @@ body.case-studies {
 }
 
 
-/***** SINGLE CASE STUDY ******/
+/***** SINGLE CASE STUDY PAGE******/
 .single-example {
-    margin: 80px 100px 50px 100px;
+    margin: 80px 100px 0 100px;
 }
 
 .case-study-description {
     width: 35%;
     float: left;
-    margin: 50px 100px;
+    margin-left: 13%;
 }
 
 .case-study-pictures {
@@ -619,6 +1249,7 @@ h2.single-case-study {
     font-family: EB Garamond;
     font-weight: 700;
     font-size: 36px;
+    margin-top: 5%;
 }
 
 h4.single-case-study {
@@ -649,7 +1280,7 @@ p.website-link {
     font-size: 25px;
     text-transform: uppercase;
     color: #484747;
-    letter-spacing: 7px;
+    letter-spacing: 0.2em;
     text-decoration: none;
     float: left;
 }
@@ -672,10 +1303,10 @@ p.back-link {
     font-size: 25px;
     text-transform: uppercase;
     color: #484747;
-    letter-spacing: 7px;
+    letter-spacing: 0.2em;
     text-decoration: none;
     margin-top: auto;
-    margin-bottom: 30px;
+    margin-bottom: 5%;
     clear: both;
 }
 
@@ -688,7 +1319,7 @@ p.back-link {
     padding-top: 20px;
     text-align: center;
     border-top: 1px solid #6a6a6a;
-    margin: 40px 80px 10px;
+    margin: auto 80px;
 }
 
 h2.footer-case-studies {
@@ -699,25 +1330,10 @@ h2.footer-case-studies {
     color: #484747;
     letter-spacing: 7px;   
     clear: both;
+    margin-top: 0;
 }
 
-
-
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */ 
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .header-right {
-    float: none;
-  }
 }
-
-
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */

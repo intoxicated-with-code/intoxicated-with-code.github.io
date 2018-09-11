@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="../css/main.css">
   <link href="https://fonts.googleapis.com/css?family=EB+Garamond%7COswald:300,400,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body class="case-studies">
@@ -23,14 +25,15 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-<div class="header">
+<div class="header" id="myTopnav">
   <a href="../index.html" class="logo">Paulina Świerczek</a>
-  <div class="header-right">
-    <a class="active" href="../index.html#about">About</a>
+    <a href="../index.html#about">About</a>
     <a href="../index.html#skills">Skills</a>
     <a href="../case-studies/case-studies.html">Work</a>
     <a href="../index.html#contact">Contact</a>
-  </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
 
 <!-- Case study description -->
@@ -51,7 +54,7 @@
 
       Every morning Donna was sending me an “email” with new functionalities Accelerate would like to add to their website. The aim was to work in three, week-long sprints at the end of which my role was to launch the changes I made to the site over the course of the week.<br><br> 
 
-      <strong>Main changes and functionalities added to the website:</strong><br>
+      <strong>Main changes and functionalities added to the website:</strong>
       <ul class="project-add-ons">
       <li>Homepage: </li>
         <ul class="homepage-changes">
@@ -64,7 +67,8 @@
       <li>New pages: “About”, “Work”, single case study, “Contact”</li>
     </ul>
     </p>
-<!--- "See website" link
+
+    <!--- "See website" link
     <p class="website-link">
     <a href="" target="_blank">See website ›</a>
   </p>
@@ -90,7 +94,19 @@
 </div>
 <!--- Footer -->
   <h2 class="footer-case-studies">&copy;Paulina Świerczek 2018</h2>
-  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+ 
+  <script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "header") {
+        x.className += " responsive";
+    } else {
+        x.className = "header";
+    }
+}
+</script>
+
+ <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
