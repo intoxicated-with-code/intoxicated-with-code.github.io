@@ -474,6 +474,7 @@ footer h2.footer-header {
   text-decoration: none;
   color: #072d36;
   float: left;
+  padding-right: 0;
 }
 
 /* Change the background color on mouse-over */
